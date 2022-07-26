@@ -11,13 +11,13 @@
 #                                   클러스터 환경에 맞게 수정
 
 # Kafka server list (Kafka 서버 목록, 공백으로 구분)
-KAFKA_SERVER_LIST="sevyms01.sec.samsung.net sevyms02.sec.samsung.net sevyms03.sec.samsung.net"
+KAFKA_SERVER_LIST="kafka01.test.igkim kafka02.test.igkim kafka03.test.igkim"
 
 # Kafka Owner (Kafka 서버를 실행할 Linux user)
-KAFKA_OWNER="manager"
+KAFKA_OWNER="igkim"
 
 # Kafka home directory (Kafka 설치 경로)
-KAFKA_HOME="/home/manager/apache/kafka"
+KAFKA_HOME="/home/igkim/apache/kafka"
 
 #################################################################################################
 
