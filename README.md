@@ -6,8 +6,10 @@ Shell Scripts for managing Kafka clusters
 ### Kafka 2.13-3.1.0 기준 자주 사용하는 명령어
 
 - 토픽 리스트
+```shell script
+bin/kafka-topics.sh --bootstrap-server kafka01:9092 --list
+```
 
-    bin/kafka-topics.sh --bootstrap-server kafka01:9092 --list
 
 - 토픽 생성
 
