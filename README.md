@@ -19,8 +19,10 @@ bin/kafka-topics.sh --bootstrap-server kafka01:9092 --create --topic igkim-mm-se
        
     
 - 토픽 삭제
-
-    bin/kafka-topics.sh --bootstrap-server kafka01:9092 --delete --topic B.*
+```bash
+bin/kafka-topics.sh --bootstrap-server kafka01:9092 --delete --topic B.*
+```
+    
 
 - 토픽 상세 정보
 
