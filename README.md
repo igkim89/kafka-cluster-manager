@@ -39,13 +39,13 @@ bin/kafka-configs.sh --bootstrap-server kafka01:9092 --entity-type topics --enti
     
 - 샘플 Producer 실행
 ```shell script
-    bin/kafka-producer-perf-test.sh --topic igkim-mm --num-records 3000 --throughput -1 --producer-props bootstrap.servers=kafka01:9092,kafka02:9092,kafka03:9092 \
+bin/kafka-producer-perf-test.sh --topic igkim-mm --num-records 3000 --throughput -1 --producer-props bootstrap.servers=kafka01:9092,kafka02:9092,kafka03:9092 \
  --print-metric --record-size 10485760 --producer.config config/producer.properties
 
-    bin/kafka-producer-perf-test.sh --topic igkim-mm-second --num-records 1000 --throughput -1 --producer-props bootstrap.servers=kafka01:9092,kafka02:9092,kafka03:9092 \
+bin/kafka-producer-perf-test.sh --topic igkim-mm-second --num-records 1000 --throughput -1 --producer-props bootstrap.servers=kafka01:9092,kafka02:9092,kafka03:9092 \
  --print-metric --record-size 10485760 --producer.config config/producer.properties
 
-    bin/kafka-producer-perf-test.sh --topic igkim --num-records 300 --throughput -1 \
+bin/kafka-producer-perf-test.sh --topic igkim --num-records 300 --throughput -1 \
  --print-metric --record-size 10485760 --producer.config config/producer.properties
 ```
 
