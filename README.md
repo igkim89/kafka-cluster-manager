@@ -12,11 +12,12 @@ bin/kafka-topics.sh --bootstrap-server kafka01:9092 --list
 
 
 - 토픽 생성
-
-    bin/kafka-topics.sh --bootstrap-server kafka01:9092 --create --topic igkim-mm --partitions 3 --replication-factor 2
+```shell
+bin/kafka-topics.sh --bootstrap-server kafka01:9092 --create --topic igkim-mm --partitions 3 --replication-factor 2
+bin/kafka-topics.sh --bootstrap-server kafka01:9092 --create --topic igkim-mm-second --partitions 2 --replication-factor 2
+```
+       
     
-    bin/kafka-topics.sh --bootstrap-server kafka01:9092 --create --topic igkim-mm-second --partitions 2 --replication-factor 2
-
 - 토픽 삭제
 
     bin/kafka-topics.sh --bootstrap-server kafka01:9092 --delete --topic B.*
